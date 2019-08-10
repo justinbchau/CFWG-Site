@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+} */
+
+p {
+    text-align: center;
+}
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+#mainNavbar .nav-link:hover {
+    color:orangered;
+}
+#mainNavbar .navbar-brand {
+    color:orangered;
+    font-size: 1.5em;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+.jumbotron {
+    padding: 9em;
+}
+
+#paral {
+    min-height: 1000px;
+    background: url(https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Anton', sans-serif;
+}
+#paral2 {
+    min-height: 600px;
+    background: url(https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wtitle {
+    padding: 300px 20px;
+}
+
+.navbar {
+    background: transparent;
+}
+
+/* .bg-transparent.scrolled {
+    background: black;
+} */
