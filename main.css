@@ -38,7 +38,7 @@ body, html {
     font-family: 'Anton', sans-serif;
 }
 #paral2 {
-    min-height: 600px;
+    min-height: 400px;
     background: url(https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
     background-attachment: fixed;
