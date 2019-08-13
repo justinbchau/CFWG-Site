@@ -57,3 +57,7 @@ body, html {
 /* .bg-transparent.scrolled {
     background: black;
 } */
+
+#getStarted .btn {
+    margin-top: 10px;
+}
