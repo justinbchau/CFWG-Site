@@ -53,6 +53,10 @@ body, html {
     font-family: 'Anton', sans-serif;
 }
 
+#paral2 .btn {
+    background-color: orangered;
+}
+
 .wtitle {
     padding: 300px 20px;
 }
@@ -61,7 +65,7 @@ body, html {
     background: transparent;
 }
 
-#getStarted .btn {
+#getStarted.btn {
     margin-top: 10px;
 }
 
@@ -141,4 +145,7 @@ hr {
 
 #yelp {
     display: inline-block;
+}
+.tab {
+    margin-left: 40px;
 }
