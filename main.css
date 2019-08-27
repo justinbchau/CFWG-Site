@@ -149,3 +149,18 @@ hr {
 .tab {
     margin-left: 40px;
 }
+
+#paral4 {
+    height: 400px;
+    background: url(https://images.unsplash.com/photo-1556817781-77671f3fe3c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Anton', sans-serif;
+}
+
+.htitle {
+    padding: 170px;
+    text-shadow: 2px 2px black;
+}
