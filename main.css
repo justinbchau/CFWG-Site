@@ -39,6 +39,19 @@ body, html {
     font-family: 'Anton', sans-serif;
 }
 
+.heading-animated {
+    animation: moveInLeft 1.5s ease-out;
+}
+
+.heading-animated-sub {
+    animation: moveInRight 1.5s ease-out;
+}
+
+.button-animated {
+    animation: moveInBottom 1s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
 #paral .btn {
     background-color: orangered;
     font-family: 'Anton', sans-serif;
@@ -163,4 +176,52 @@ hr {
 .htitle {
     padding: 170px;
     text-shadow: 2px 2px black;
+}
+
+.shadow {
+    text-shadow: 2px 2px black;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }  
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }  
+}
+
+@keyframes moveInBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }  
 }
