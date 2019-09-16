@@ -12,6 +12,11 @@ body, html {
     font-family: 'Anton', sans-serif;
 }
 
+nav {
+    color: rgba (0, 0, 0, 0.2);
+    transition: 0.3s linear;
+}
+
 #mainNavbar .nav-link:hover {
     color:orangered;
 }
@@ -23,6 +28,18 @@ body, html {
 #mainNavbar .nav-link {
     color: white;
     font-size: 16px;
+}
+
+.nav-container {
+    height: 44px;
+    width: 100%;
+    position: relative; 
+    
+}
+
+nav.solid-nav {
+    background-color: black;
+    transition: 0.3s linear;
 }
 
 .jumbotron {
