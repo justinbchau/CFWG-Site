@@ -1,132 +1,542 @@
+<?php
+if($_POST["message"]) {
+    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+<!-- PHP Form Script -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crossfit Willow Glen</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-</head>
-<body>
-        <nav id="mainNavbar" class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><i class="fas fa-dumbbell"></i> CFWG</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#paral"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutUs"><i class="fas fa-book-open"></i> About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"></i><i class="fas fa-user"></i> Coaches</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"></i><i class="fas fa-envelope"></i> Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>   
-            
-            <section id="paral" class="mb-0 home">
-               <div class="container text-white text-center">
-                   <div class="wtitle">
-                        <h1 class="display-2">Crossfit Willow Glen</h1>
-                        <p class="lead">95 Phelan Ave, San Jose CA 95112</p>
-                        <hr class="my-2">
-                        <p class="lead">More info</p>
-                        <p class="lead">
-                            <a class="btn btn-danger btn-lg" href="Jumbo action link" role="button">Get Started</a>
-                        </p>
-                    </div>
-               </div>
-            </section>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar"
+    >
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-dumbbell"></i> CFWG</a
+        >
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#paral"
+                ><i class="fas fa-home"></i> Home
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs"
+                ><i class="fas fa-book-open"></i> About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#coaches"
+                ><i class="fas fa-user"></i> Coaches</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="fas fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <section id="aboutUs">
-            <div class="container-fluid px-0 ">
-                <div class="row align-items-center content no-gutters">
-                    <div class="col">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
-                    </div>
-                    <div class="col text-center py-4">
-                        <h1 class="">Welcome to Crossfit Willow Glen!</h1>
-                        <p class="lead">CrossFit Willow Glen offers everyone an opportunity to workout in an atmosphere similar to that found on a sports team. We're a gym where you know everyone and where everyone you train with will welcome you, encourage you and push you to be your best. We have an atmosphere that encourages everyone to "battle" the workout together and come out the other side a better person: physically, mentally, and maybe even spiritually. 
-                        </p>
-                        <p class="lead">Let us help you get in the best shape of your life! All classes given under the watchful eyes of experienced coaches and in classes that won't make you feel like you are a sardine swimming with a school of a thousand other sardines!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="paral" class="mb-0 home">
+      <div class="container text-white text-center">
+        <div class="wtitle">
+          <h1 class="display-2 heading-animated shadow">
+            Crossfit Willow Glen
+          </h1>
+          <p class="lead heading-animated-sub shadow">
+            95 Phelan Ave, San Jose CA 95112
+          </p>
+          <hr class="my-2 heading-animated-sub" />
+          <p class="lead button-animated shadow">More info</p>
+          <p class="lead">
+            <a
+              class="btn btn-danger btn-lg button-animated"
+              href="#getStarted"
+              role="button"
+              >Get Started</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <div id="paral2" class="container-fluid text-white py-5">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="display-4 py-5">How do I get Started?</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="aboutUs">
+      <div class="container-fluid px-0 ">
+        <div class="row align-items-center content no-gutters">
+          <div class="col">
+            <img
+              class="img-fluid"
+              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+              alt=""
+            />
+          </div>
+          <div class="col text-center py-4">
+            <h1 class="">Welcome to Crossfit Willow Glen!</h1>
+            <p class="lead">
+              CrossFit Willow Glen offers everyone an opportunity to workout in
+              an atmosphere similar to that found on a sports team. We're a gym
+              where you know everyone and where everyone you train with will
+              welcome you, encourage you and push you to be your best. We have
+              an atmosphere that encourages everyone to "battle" the workout
+              together and come out the other side a better person: physically,
+              mentally, and maybe even spiritually.
+            </p>
+            <p class="lead">
+              Let us help you get in the best shape of your life! All classes
+              given under the watchful eyes of experienced coaches and in
+              classes that won't make you feel like you are a sardine swimming
+              with a school of a thousand other sardines!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section>
-          <div class="container">
-            <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <section>
+      <div id="paral2" class="container-fluid text-white">
+        <div class="row">
+          <div class="col-lg-12 text-center py-5">
+            <div class="d-inline">
+              <h1 id="getStarted" class="display-4 py-5 shadow">
+                How do I get Started?
+              </h1>
+              <a href="beginners.html">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg mx-5 center-block"
+              >
+                Beginners
+              </button>
+              </a>
+              <a href="experienced.html">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg mx-5 center-block"
+              >
+                Experienced
+              </button>
+              </a>
+              <a href="dropin.html">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg mx-5 center-block"
+              >
+                Drop-ins
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="coaches" class="container"></div>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-2">
+            <h2 class="display-4 py-5">Coaches</h2>
+            <div class="card mt-2">
+              <img class="card-img-top" src="" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Audra Soltis</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid my-3">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Luis</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Maddy</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Peter</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Steve</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid my-3">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Sarah</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Justin</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Bob</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Mark</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Derek</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="paral3" class="container-fluid text-white mt-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="d-inline">
+              <h1 class="display-4"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <form action="">
+        <div id="contact" class="container-fluid contact no-gutters">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="contact-info">
+                <img
+                  src="https://image.ibb.co/kUASdV/contact-image.png"
+                  alt="image"
+                />
+                <h2>Contact Us</h2>
+                <h4>We would love to hear from you !</h4>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="contact-form">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="fname"
+                    >First Name:</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      placeholder="Enter First Name"
+                      name="fname"
+                    />
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="lname"
+                    >Last Name:</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lname"
+                      placeholder="Enter Last Name"
+                      name="lname"
+                    />
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email"
+                    >Email:</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter email"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="comment"
+                    >Comment:</label
+                  >
+                  <div class="col-sm-10">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      id="comment"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-danger">Submit</button>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-        </section>
-            
-            
-            
-            
-            
-            
-            
+        </div>
+      </form>
+    </section>
 
-    
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.3115419523256!2d-121.86891636887498!3d37.313158630486825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e336ad7bddd1f%3A0xeffa19096c8a90da!2sCross+Fit+Willow+Glen!5e0!3m2!1sen!2sus!4v1565815754839!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
 
-<script>
-    $(window).scroll(function(){
-        $('navbar').toggleClass('scrolled', $(this).scrollTop() > 800);
-    });
-</script>
+    <footer class="page-footer font-small text-white">
+      <div style="background-color: orangered;">
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
+            >
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+            <!-- Grid column -->
 
-</body>
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!-- Facebook -->
+              <a
+                id="face"
+                href="https://www.facebook.com/groups/98765643984/about/"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f white mr-4"> </i>
+              </a>
+              <!-- Yelp -->
+              <a
+                id="yelp"
+                href="https://www.yelp.com/biz/crossfit-willow-glen-san-jose"
+                class="yp-ic"
+                target="_blank"
+              >
+                <i class="fab fa-yelp mr-4"></i>
+              </a>
+              <!--Instagram-->
+              <a href="https://www.instagram.com/cfwillowglen/" target="_blank">
+                <i class="fab fa-instagram white"> </i>
+              </a>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase">Crossfit Willow Glen</h6>
+            <hr
+              class="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase">Useful links</h6>
+            <hr
+              class="white accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a
+                href="http://journal.crossfit.com/start.tpl?version=CFJ-white123x63"
+                target="_blank"
+                title="CrossFit Journal: The Performance-Based Lifestyle Resource"
+                ><img
+                  src="http://journal.crossfit.com/templates/images/white-125x63.png"
+                  width="125px"
+                  height="63px"
+                  alt="CrossFit Journal: The Performance-Based Lifestyle Resource"
+              /></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase">Contact</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p><i class="fas fa-home mr-3"></i> 95 Phelan, Suite 5</p>
+            <p class="tab">
+              San Jose, CA 95112-6121, US
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> audra@crossfitwillowglen.com
+            </p>
+            <p><i class="fas fa-phone mr-3"></i> (408) 605-2772</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <div class="footer-copyright text-center py-3">
+        Copyright © 2019 CrossFit Willow Glen. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scroll.js"></script>
+  </body>
 </html>
