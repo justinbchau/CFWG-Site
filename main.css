@@ -85,6 +85,29 @@ nav.solid-nav {
 
 #paral2 .btn {
     background-color: orangered;
+    text-decoration: none;
+}
+
+.started {
+    padding-top: 300px 20px;
+}
+
+.btns {
+    margin-bottom: 10px;
+} 
+
+@media only screen and (max-width: 767px) {
+    .btns {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btns .btn {
+        display: block;
+        float: none;
+        width: 100%;
+        text-decoration: none;
+    }
 }
 
 .wtitle {
@@ -188,11 +211,14 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Anton', sans-serif;
+    text-align: center;
 }
 
 .htitle {
-    padding: 170px;
     text-shadow: 2px 2px black;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
 }
 
 .shadow {
