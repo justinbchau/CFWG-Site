@@ -1,10 +1,3 @@
-<?php
-if($_POST["message"]) {
-    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
-}
-?>
-<!-- PHP Form Script -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -533,6 +526,8 @@ if($_POST["message"]) {
         Copyright © 2019 CrossFit Willow Glen. All Rights Reserved.
       </div>
     </footer>
+
+    <?php include 'send_from-email.php';?>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
