@@ -168,7 +168,7 @@ nav.solid-nav {
     background-repeat: no-repeat;
 }
 .map {
-    padding-top: 18%;
+    padding-top: 7%;
 }
 .page-footer {
     background-color: black;
@@ -223,6 +223,19 @@ hr {
 
 .shadow {
     text-shadow: 2px 2px black;
+}
+
+.bullet li {
+    list-style-type: none;
+}
+
+.spacing {
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.email-contact {
+    margin-top: 150px;
 }
 
 @keyframes moveInLeft {
