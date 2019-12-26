@@ -56,6 +56,10 @@ nav.solid-nav {
     font-family: 'Anton', sans-serif;
 }
 
+#coaches .btn {
+    background-color: orangered;
+}
+
 .heading-animated {
     animation: moveInLeft 1.5s ease-out;
 }
