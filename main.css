@@ -57,7 +57,7 @@ nav.solid-nav {
 }
 
 #coaches .btn {
-    background-color: orangered;
+    background-color: orangered ;
 }
 
 .heading-animated {
@@ -284,4 +284,30 @@ hr {
         transform: translate(0);
         opacity: 1;
     }  
+}
+
+.center_frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_frame a {
+    background-color: orangered;
+}
+
+.center_frame-text {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#info p {
+    font-size: 20px;
+}
+
+#drop p {
+    font-size: 25px;
 }
